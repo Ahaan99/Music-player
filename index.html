@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side-panel">
+            <h2>Playlist</h2>
+            <ul id="song-list">
+                <li data-src="song1.mp3" data-cover="Ariana.webp" data-title="American pop " data-artist="Artist 1" class="active"> American Pop</li>
+                <li data-src="song2.mp3" data-cover="arijit.png" data-title="Arijit singh" data-artist="Artist 2"> Arijit Singh</li>
+                <li data-src="song3.mp3" data-cover="jubin.png" data-title="Jubin Nautiyal" data-artist="Artist 3">Jubin Nautiyal</li>
+                <li data-src="song4.mp3" data-cover="raftaar.png" data-title="Raftaar" data-artist="Artist 4"> Raftaar</li>
+                <li data-src="song5.mp3" data-cover="king.png" data-title="King" data-artist="Artist 5">King</li>
+                <li data-src="song6.mp3" data-cover="jass.png" data-title="jass manak" data-artist="Artist 6"> Jass manak</li>
+            </ul>
+        </div>
+        <div class="music-player">
+            <img id="cover" src="cover.jpg" alt="Song Cover">
+            <div class="song-info">
+                <h3 id="song-title">Song 1</h3>
+                <p id="artist-name">Artist 1</p>
+            </div>
+            <div class="controls">
+                <button id="prev"><i class="fas fa-backward"></i></button>
+                <button id="play-pause"><i class="fas fa-play"></i></button>
+                <button id="next"><i class="fas fa-forward"></i></button>
+            </div>
+        </div>
+    </div>
+    <p class="footer">Developed By <b>Ahaan</b></p>
+    <audio id="audio"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
